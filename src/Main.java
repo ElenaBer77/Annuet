@@ -6,19 +6,17 @@ public class Main {
 
         double payment = service.calculate(credit, month);
 
-        //int payment = (int) payment;
-        // System.out.println(payment);
 
         System.out.println();
         System.out.println("1.000.000 / 12");
-        System.out.println(service.calculate(1000000, 12));
+        System.out.println((int)service.calculate(1000000, 12));
 
         System.out.println();
         System.out.println("1.000.000 / 24");
-        System.out.println(service.calculate(1000000, 24));
+        System.out.println((int)service.calculate(1000000, 24));
 
         System.out.println();
         System.out.println("1.000.000 / 36");
-        System.out.println(service.calculate(1000000, 36));
+        System.out.println((int)service.calculate(1000000, 36));
     }
 }
